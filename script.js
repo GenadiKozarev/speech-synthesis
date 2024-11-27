@@ -18,18 +18,25 @@ function populateVoices() {
 
 const setVoice = e => {
     msg.voice = voices.find(voice => voice.name === e.target.value);
-    restartSpeech();
+    toggleSpeech();
 };
 
-const restartSpeech = ({ startOver = true } = {}) => {
+const toggleSpeech = ({ startOver = true } = {}) => {
     speechSynthesis.cancel();
-    console.log(startOver);
     if (startOver) {
         speechSynthesis.speak(msg);
     }
+};
+
+const setOption = e => {
+    msg[e.target.name] = e.target.value;
+    toggleSpeech();
 };
 
 populateVoices();
 
 speechSynthesis.addEventListener('voiceschanged', populateVoices);
 voicesDropdown.addEventListener('change', setVoice);
+options.forEach(option => option.addEventListener('change', setOption));
+speakButton.addEventListener('click', toggleSpeech);
+stopButton.addEventListener('click', () => toggleSpeech({ startOver: false }));
