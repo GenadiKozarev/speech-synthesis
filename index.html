@@ -13,6 +13,25 @@
         <script defer src="./script.js"></script>
     </head>
     <body>
-        <h1>hi</h1>
+        <div class="voice-wave">
+            <h1>The Voice Wave 2000</h1>
+            <select name="voice" id="voices">
+                <option value="">Select a voice</option>
+            </select>
+            <label for="rate">Rate:</label>
+            <input
+                name="rate"
+                type="range"
+                min="0"
+                max="3"
+                value="1"
+                step="0.1"
+            />
+            <label for="pitch">Pitch:</label>
+            <input name="pitch" type="range" min="0" max="2" step="0.1" />
+            <textarea name="text">Hello, I like JavaScript!</textarea>
+            <button id="stop">Stop!</button>
+            <button id="speak">Speak</button>
+        </div>
     </body>
 </html>

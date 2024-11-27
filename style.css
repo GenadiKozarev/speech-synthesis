@@ -97,3 +97,90 @@ body {
             transparent
         );
 }
+
+h1 {
+    width: calc(100% + 4rem);
+    text-align: center;
+    margin: -2rem 0 2rem -2rem;
+    padding: 0.5rem;
+    background: #f4e184;
+    border-bottom: 0.5rem solid #84f4e1;
+    font-size: 4rem;
+    font-weight: 100;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0.3rem 0.3rem 0 #5ec0b15b;
+}
+
+.voice-wave {
+    margin: 0 auto;
+    width: 50rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    background: #ffffff;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 0.5rem 0.5rem #0000003e;
+}
+
+.voice-wave select,
+.voice-wave textarea,
+.voice-wave button {
+    width: 100%;
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 0;
+    outline: 0;
+    font-size: 1.5rem;
+    background: #f4f4f4;
+}
+
+.voice-wave input {
+    width: 100%;
+    display: block;
+    margin: 1rem 0;
+    border: 0;
+    outline: 0;
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    background-color: #f4e184;
+}
+
+input[type='range']::-moz-range-track {
+    background-color: #f4e184;
+}
+
+input[type='range']::-ms-track {
+    background-color: #f4e184;
+}
+
+textarea {
+    height: 25rem;
+}
+
+.voice-wave button {
+    background: #f4e184;
+    width: 49%;
+    float: left;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 0;
+    font-size: 2rem;
+    border-bottom: 0.5rem solid #84f4e1;
+    cursor: pointer;
+    position: relative;
+}
+
+.voice-wave button:active {
+    top: 0.2rem;
+}
+
+.voice-wave button:nth-of-type(1) {
+    margin-right: 2%;
+}
