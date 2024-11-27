@@ -1,0 +1,99 @@
+html {
+    font-family: 'Faculty Glyphic', 'Trebuchet MS', Arial, sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: #5ec0b1;
+    background-size: 10rem 5rem;
+    background-image: radial-gradient(
+            circle at 100% 150%,
+            #5ec0b1 24%,
+            #84f4e1 25%,
+            #84f4e1 28%,
+            #5ec0b1 29%,
+            #5ec0b1 36%,
+            #84f4e1 36%,
+            #84f4e1 40%,
+            transparent 40%,
+            transparent
+        ),
+        radial-gradient(
+            circle at 0 150%,
+            #5ec0b1 24%,
+            #84f4e1 25%,
+            #84f4e1 28%,
+            #5ec0b1 29%,
+            #5ec0b1 36%,
+            #84f4e1 36%,
+            #84f4e1 40%,
+            transparent 40%,
+            transparent
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            #84f4e1 10%,
+            #5ec0b1 11%,
+            #5ec0b1 23%,
+            #84f4e1 24%,
+            #84f4e1 30%,
+            #5ec0b1 31%,
+            #5ec0b1 43%,
+            #84f4e1 44%,
+            #84f4e1 50%,
+            #5ec0b1 51%,
+            #5ec0b1 63%,
+            #84f4e1 64%,
+            #84f4e1 71%,
+            transparent 71%,
+            transparent
+        ),
+        radial-gradient(
+            circle at 100% 50%,
+            #84f4e1 5%,
+            #5ec0b1 6%,
+            #5ec0b1 15%,
+            #84f4e1 16%,
+            #84f4e1 20%,
+            #5ec0b1 21%,
+            #5ec0b1 30%,
+            #84f4e1 31%,
+            #84f4e1 35%,
+            #5ec0b1 36%,
+            #5ec0b1 45%,
+            #84f4e1 46%,
+            #84f4e1 49%,
+            transparent 50%,
+            transparent
+        ),
+        radial-gradient(
+            circle at 0 50%,
+            #84f4e1 5%,
+            #5ec0b1 6%,
+            #5ec0b1 15%,
+            #84f4e1 16%,
+            #84f4e1 20%,
+            #5ec0b1 21%,
+            #5ec0b1 30%,
+            #84f4e1 31%,
+            #84f4e1 35%,
+            #5ec0b1 36%,
+            #5ec0b1 45%,
+            #84f4e1 46%,
+            #84f4e1 49%,
+            transparent 50%,
+            transparent
+        );
+}
