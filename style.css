@@ -132,7 +132,6 @@ h1 {
     padding: 1rem;
     border: 0;
     outline: 0;
-    font-size: 1.5rem;
     background: #f4f4f4;
 }
 
@@ -143,6 +142,20 @@ h1 {
     border: 0;
     outline: 0;
     font-size: 1.5rem;
+}
+
+.voice-wave select {
+    font-size: 1.4rem;
+}
+
+.voice-wave button {
+    font-size: 1.5rem;
+}
+
+.voice-wave textarea {
+    font-size: 1.3rem;
+    height: 25rem;
+    font-family: 'Faculty Glyphic';
 }
 
 label {
@@ -159,10 +172,6 @@ input[type='range']::-moz-range-track {
 
 input[type='range']::-ms-track {
     background-color: #f4e184;
-}
-
-textarea {
-    height: 25rem;
 }
 
 .voice-wave button {
