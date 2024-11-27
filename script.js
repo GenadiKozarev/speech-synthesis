@@ -1,7 +1,7 @@
 const msg = new SpeechSynthesisUtterance();
+msg.text = document.querySelector('[name="text"]').value;
 let voices = [];
 const voicesDropdown = document.querySelector('[name="voice"]');
-msg.text = document.querySelector('[name="text"]').value;
 
 function populateVoices() {
     voices = speechSynthesis.getVoices();
@@ -13,4 +13,11 @@ function populateVoices() {
         .join('');
 }
 
+const setVoice = e => {
+    msg.voice = voices.find(voice => voice.name === e.target.value);
+};
+
+populateVoices();
+
 speechSynthesis.addEventListener('voiceschanged', populateVoices);
+voicesDropdown.addEventListener('change', setVoice);
